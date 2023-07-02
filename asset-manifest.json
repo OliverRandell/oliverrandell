@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/oliverrandell/static/css/main.f788ae4b.css",
-    "main.js": "/oliverrandell/static/js/main.89b8f3f8.js",
+    "main.css": "/oliverrandell/static/css/main.5f695779.css",
+    "main.js": "/oliverrandell/static/js/main.9b0665ca.js",
     "static/js/787.a681bc06.chunk.js": "/oliverrandell/static/js/787.a681bc06.chunk.js",
+    "static/media/logo.svg": "/oliverrandell/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/oliverrandell/index.html",
-    "main.f788ae4b.css.map": "/oliverrandell/static/css/main.f788ae4b.css.map",
-    "main.89b8f3f8.js.map": "/oliverrandell/static/js/main.89b8f3f8.js.map",
+    "main.5f695779.css.map": "/oliverrandell/static/css/main.5f695779.css.map",
+    "main.9b0665ca.js.map": "/oliverrandell/static/js/main.9b0665ca.js.map",
     "787.a681bc06.chunk.js.map": "/oliverrandell/static/js/787.a681bc06.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f788ae4b.css",
-    "static/js/main.89b8f3f8.js"
+    "static/css/main.5f695779.css",
+    "static/js/main.9b0665ca.js"
   ]
 }

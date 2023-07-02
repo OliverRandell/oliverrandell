@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/oliverrandell/static/css/main.073c9b0a.css",
+    "main.js": "/oliverrandell/static/js/main.64ea6932.js",
+    "static/js/787.a681bc06.chunk.js": "/oliverrandell/static/js/787.a681bc06.chunk.js",
+    "static/media/logo.svg": "/oliverrandell/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/oliverrandell/index.html",
+    "main.073c9b0a.css.map": "/oliverrandell/static/css/main.073c9b0a.css.map",
+    "main.64ea6932.js.map": "/oliverrandell/static/js/main.64ea6932.js.map",
+    "787.a681bc06.chunk.js.map": "/oliverrandell/static/js/787.a681bc06.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.64ea6932.js"
+  ]
+}

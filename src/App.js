@@ -1,22 +1,20 @@
 import React, { useState, useEffect } from 'react';
-import Pages from './pages';
 
 function App() {
-  const [user, setUser] = useState(null);
+  const [data, setData] = useState(null);
+
   useEffect(() => {
-    // NOTE: Use your username below
     fetch('https://gitconnected.com/v1/portfolio/oliverrandell')
-      .then((res) => res.json())
-      .then((user) => {
-        setUser(user);
-      });
+      .then(response => response.json())
+      .then(json => setData(json))
+      .catch(error => console.error(error));
   }, []);
 
-  if (!user) {
-    return <div />;
-  }
-
-  return <Pages user={user} />;
+  return (
+    <div>
+      {data ? <pre>{JSON.stringify(data, null, 2)}</pre> : 'Loading...'}
+    </div>
+  );
 }
 
 export default App;

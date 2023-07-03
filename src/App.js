@@ -3,18 +3,19 @@ import Pages from './pages';
 
 function App() {
   const [user, setUser] = useState(null);
-
   useEffect(() => {
-    fetch('https://gitconnected.com/v1/portfolio/oliverrandell')
-      .then(response => response.json())
+    // NOTE: Use your username below
+    fetch('https://gitconnected.com/v1/portfolio/richard-hendricks-demo')
+      .then((res) => res.json())
       .then((user) => {
         setUser(user);
-      })
-      .catch(error => console.error(error));
+      });
   }, []);
+
   if (!user) {
     return <div />;
   }
+
   return <Pages user={user} />;
 }
 

@@ -1,7 +1,7 @@
 {
   "name": "oliverrandell",
   "version": "0.1.0",
-  "homepage": "https://oliverrandell.github.io/oliverrandell",
+  "homepage": "oliverrandell.com",
   "private": false,
   "dependencies": {
     "@carbon/icons-react": "^11.21.0",

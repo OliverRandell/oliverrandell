@@ -1,20 +1,24 @@
 import React from 'react';
-import { HashRouter, Routes, Route } from 'react-router-dom';
-import Me from './Me';
-import Projects from './Projects';
-import Work from './Work';
-import Education from './Education';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './Home';
+// import Projects from './Projects';
+// import Work from './Work';
+// import Education from './Education';
+import About from './About';
+import Contact from './Contact';
 
 const Pages = ({ user }) => {
   return (
-    <HashRouter basename="/">
+    <Router>
       <Routes>
-        <Route exact path="/" element={<Me user={user} />} />
-        <Route path="/projects" element={<Projects user={user} />} />
+        <Route exact path="/" element={<Home user={user} />} />
+        {/* <Route path="/projects" element={<Projects user={user} />} />
         <Route path="/work" element={<Work user={user} />} />
-        <Route path="/education" element={<Education user={user} />} />
+        <Route path="/education" element={<Education user={user} />} /> */}
+        <Route path="/about" element={<About user={user} />} />
+        <Route path="/contact" element={<Contact user={user} />} />
       </Routes>
-    </HashRouter>
+    </Router>
   );
 };
 

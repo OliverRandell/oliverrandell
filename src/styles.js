@@ -1,24 +1,29 @@
 import styled from 'styled-components';
 import { blue } from '@carbon/colors';
 
-export const SectionTitle = styled.h3`
-  margin-top: 1.5rem;
-  margin-bottom: 0.5rem;
+export const SectionHeader = styled.header`
+  text-align: center;
+  margin-bottom: 44px;
+`;
+
+export const SectionTitle = styled.h2`
+  font-family: Amiri,serif;
+  font-weight: 500;
+  font-style: normal;
+  margin: 0 auto;
+  font-size: 2.625rem;
+  line-height: 1.1904761905;
+  letter-spacing: -1px;
+  text-align: center;
 `;
 
 export const Paragraph = styled.p`
   white-space: pre-wrap;
 `;
 
-export const Pill = styled.span`
-  display: inline-block;
-  margin-right: 0.75rem;
+export const Pill = styled.li`
+  
   margin-bottom: 0.75rem;
-  padding: 0.5rem 1rem;
-  background-color: ${blue[20]};
-  color: ${blue[70]};
-  border-radius: 2px;
-  font-size: 12px;
-  font-weight: bold;
+  padding: 0.5rem 0;
   text-transform: uppercase;
 `;

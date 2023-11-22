@@ -1,18 +1,26 @@
 import React from 'react';
-import Sidebar from '../Sidebar';
+import Logo from '../Logo';
+import Navbar from '../Navbar';
 import UserHeader from '../UserHeader';
 import MobileNav from '../MobileNav';
 
-import { StyledContent } from './styles';
+import { StyledContent, Header } from './styles';
 
 const Layout = ({ user, children }) => {
   return (
     <>
-      <MobileNav />
-      <Sidebar />
+
+      <Header>
+        <Logo />
+        <MobileNav />
+        <Navbar />
+      </Header>
+      
+
       <StyledContent>
-        <UserHeader user={user} />
+        
         <div>{children}</div>
+        <UserHeader user={user} />
       </StyledContent>
     </>
   );

@@ -8,7 +8,7 @@ const MobileNav = () => {
       <Spacer />
       <NavWrapper>
         <NavLink to="/">
-          Me
+          Home
         </NavLink>
         <NavLink to="/projects">
           Projects

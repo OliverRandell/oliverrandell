@@ -14,11 +14,15 @@ export const NavLink = styled(Link)`
   align-items: center;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 0 1rem;
+  margin-left: 1.5rem;
   height: 100%;
   cursor: pointer;
+  border-bottom: 1px solid transparent;
+  transition: all .25s ease;
+  line-height: 2;
   &.active {
     color: #000000;
+    border-bottom: 1px solid purple;
   }
 `;
   
@@ -39,7 +43,6 @@ export const Bars = styled(FaBars)`
 export const NavMenu = styled.div`
   display: flex;
   align-items: center;
-  margin-right: -24px;
   /* Second Nav */
   /* margin-right: 24px; */
   /* Third Nav */

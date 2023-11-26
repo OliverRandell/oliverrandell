@@ -40,12 +40,21 @@ code {
 }
 
 h1 {
-  font-weight: bold;
+  font-weight: 700;
+  font-size: .75rem;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 h2, h3, h4, h5, h6 {
   font-family: 'Amiri', serif;
   font-weight: 400;
+}
+
+h2 {
+  font-size: 3.75rem;
+  line-height: 1;
 }
 
 h3 {
@@ -72,6 +81,11 @@ input, textarea {
   padding: 0;
   border: none;
   border-bottom: 1px solid #000;
+  transition: all .25s ease;
+  &:focus-visible {
+    outline: none;
+    border-bottom: 1px solid purple;
+  }
 }
 
 .btn {
@@ -80,6 +94,16 @@ input, textarea {
   padding: 0.5rem 2rem;
   line-height: 1;
   cursor: pointer;
+  background-color: #800080;
+  color: #fff;
+  transition: all 0.25s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 1px solid purple;
+  &:hover {
+    background-color: rgb(128 0 128 / 90%);
+    border-color: #fff;
+  }
 }
 
 .feature-wrapper {

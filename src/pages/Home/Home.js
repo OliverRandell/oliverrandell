@@ -11,7 +11,9 @@ const Me = ({ user }) => {
       <HomeHero className='feature-wrapper'>
         <HomeHeroWrapper>
           <div className='content'>
-            <SectionTitle>{user.basics.headline} {user.basics.region}</SectionTitle>
+            <h1>{user.basics.name}</h1>
+            <SectionTitle>{user.basics.region} based <span className='job-title'>Product manager</span></SectionTitle>
+            <p>{user.basics.yearsOfExperience} years experience designing, developing and managing digital products. {user.basics.headline}</p>
           </div>
           <figure className="media">
             <Image src={user.basics.picture} />
@@ -19,12 +21,14 @@ const Me = ({ user }) => {
         </HomeHeroWrapper>
       </HomeHero>
       <div className='feature-wrapper'>
-        <SectionHeader>
-          <SectionTitle>Timeline</SectionTitle>
-          <p>Browse timeline of key career and lifetime events.</p>
-        </SectionHeader>
+        <div>
+          <SectionHeader>
+            <SectionTitle>Timeline</SectionTitle>
+            <p>Browse timeline of key career and lifetime events.</p>
+          </SectionHeader>
         
-        <Timeline />
+          <Timeline />
+        </div>
       </div>
       <div>
         <SectionTitle>Profiles</SectionTitle>

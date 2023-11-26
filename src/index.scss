@@ -11,18 +11,39 @@
 body {
   margin: 0;
   font-family: 'Lato', 'Helvetica Neue', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   color: #626363;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+// CREATE VARIABLES
+// PRIMARY COLOUR / SECONDARY COLOUR / SERIF FONT? / SANS-SERIF FONT
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
-h1, h2, h3, h4, h5, h6 {
+.container {
+  margin: auto;
+  max-width: 1200px;
+  // min-height: 100vh;
+  // padding: 2rem;
+  // transform: translateZ(0);
+  // will-change: margin-left;
+  display: block;
+  box-sizing: border-box;
+  @media (min-width: 640px) {
+    padding: 0 1rem;
+  }
+}
+
+h1 {
+  font-weight: bold;
+}
+
+h2, h3, h4, h5, h6 {
   font-family: 'Amiri', serif;
   font-weight: 400;
 }
@@ -35,19 +56,58 @@ p {
   line-height: 22px;
 }
 
+label {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+input, textarea {
+  box-sizing: border-box;
+  border-color: #e17b77;
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  color: #e17b77;
+  line-height: 80px;
+  padding: 0;
+  border: none;
+  border-bottom: 1px solid #000;
+}
+
+.btn {
+  border: 1px solid #000;
+  width: auto;
+  padding: 0.5rem 2rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
 .feature-wrapper {
-  padding: 85px 0;
+  padding-top: 85px;
+  padding-bottom: 85px;
+  display: grid;
+  &.w-50 {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .logo {
   font-size: 30px;
   text-transform: lowercase;
+  position: relative;
   a {
     text-decoration: none;
     color: #626363;
   }
   span {
     font-weight: bold;
+  }
+  .underline {
+    display: block;
+    position: absolute;
+    height: 3px;
+    background-color: #000;
+    left: 0;
   }
 }
 
@@ -167,10 +227,23 @@ p {
 .contact-form {
   > div {
     display: block;
-    margin-bottom: 1rem;
+    margin-bottom: 2.5rem;
   }
   label {
     display: block;
     padding-bottom: .25rem;
   }
 }
+
+// .media {
+//   margin: 0;
+//   postion: relative;
+//   &:before {
+//     content: '';
+//     position: absolute;
+//     right: 0;
+//     top: 0;
+//     background-color: red;
+//     z-index: -1;
+//   }
+// }

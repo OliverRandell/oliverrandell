@@ -10,14 +10,14 @@ const Layout = ({ user, children }) => {
   return (
     <>
 
-      <Header>
+      <Header className='container'>
         <Logo />
         <MobileNav />
         <Navbar />
       </Header>
       
 
-      <StyledContent>
+      <StyledContent className='container'>
         
         <div>{children}</div>
         <UserHeader user={user} />

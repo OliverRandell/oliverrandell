@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom';
 const Logo = () => {
     return (
         <div className='logo'>
-            <Link to="/">Oliver <span>Randell</span></Link>
+            <Link to="/">O<span>R.</span></Link>
+            {/* <div className='underline'></div> */}
         </div>
     )
 }

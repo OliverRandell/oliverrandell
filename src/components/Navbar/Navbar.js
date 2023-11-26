@@ -19,9 +19,6 @@ const Navbar = ({ user, children }) => {
         <NavLink to='/contact' activeStyle>
           Contact
         </NavLink>
-        <NavBtn>
-          <NavBtnLink to='/about'>Sign In</NavBtnLink>
-        </NavBtn>
       </NavMenu>
     </Nav>
   );

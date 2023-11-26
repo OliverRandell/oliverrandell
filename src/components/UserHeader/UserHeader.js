@@ -11,7 +11,7 @@ const UserHeader = ({ user }) => {
       <Header>
         
         <div>
-          <h1>Name: {user.basics.name}</h1>
+          {/* <h1>Name: {user.basics.name}</h1> */}
           {/* <h4>Gitconnected User name:
             <a
               href={`https://gitconnected.com/${user.basics.username}`}

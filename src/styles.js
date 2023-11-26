@@ -15,6 +15,9 @@ export const SectionTitle = styled.h2`
   line-height: 1.1904761905;
   letter-spacing: -1px;
   text-align: center;
+  span {
+    font-weight: bold;
+  }
 `;
 
 export const Paragraph = styled.p`

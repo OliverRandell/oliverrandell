@@ -1,45 +1,71 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
+import { FeatureWall } from './styles';
 
 import Layout from '../../components/Layout';
 
 const Contact = ({ user }) => {
   const form = useRef();
+	const [errorMessage, setErrorMessage] = useState('');
+  const [submitMessage, setSubmitMessage] = useState('');
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm('service_z55pa1f', 'contact_form', form.current, 'm7VUgv7wvSPvw4ryn')
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+		// RESET MESSAGES
+		setErrorMessage('');
+    setSubmitMessage('');
+
+		// CHECK IF REQUIRED FIELDS ARE EMPTY
+		const requiredFields = ['user_name', 'user_email', 'message'];
+    const isEmpty = requiredFields.some((field) => !form.current[field].value.trim());
+
+		if (isEmpty) {
+			setErrorMessage('Please fill out all required fields.');
+			return;
+		}
+
+		try {
+			const result = await emailjs.sendForm('service_z55pa1f','contact_form',form.current,'m7VUgv7wvSPvw4ryn');
+			console.log(result.text);
+
+			// DISPLAY SUBMIT MESSAGE
+			setSubmitMessage('Email sent successfully!');
+		} catch (error) {
+			console.error(error.text);
+			setErrorMessage('An error occurred while sending the email.');
+		}
   };
 
   return (
     <Layout user={user}>
 			<div>
-				<div className="feature-wrapper">
-					<form ref={form} onSubmit={sendEmail} className='contact-form'>
-						<div>
-							<label>Name</label>
-							<input type="text" name="user_name" />
-						</div>
-						<div>
-							<label>Email</label>
-							<input type="email" name="user_email" />
-						</div>
-						<div>
-							<label>Message</label>
-							<textarea name="message" />
-						</div>
-						<input type="submit" value="Send" />
-					</form>
+				<div className="feature-wrapper w-50">
+					<FeatureWall>
+						<h2>I'd love to hear from you</h2>
+					</FeatureWall>
+
+					<div>
+						<form ref={form} onSubmit={sendEmail} className='contact-form'>
+							<div>
+								<label>Your Name</label>
+								<input type="text" name="user_name" />
+							</div>
+							<div>
+								<label>Email</label>
+								<input type="email" name="user_email" />
+							</div>
+							<div>
+								<label>Your Message</label>
+								<textarea name="message" />
+							</div>
+							{errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
+				{submitMessage && <p style={{ color: 'green' }}>{submitMessage}</p>}
+							<input className='btn' type="submit" value="Send" />
+						</form>	
+					</div>
+
+					
 				</div>
 			</div>
     </Layout>

@@ -31,6 +31,10 @@ export const AboutMe = styled.div`
   }
   h2 {
     text-align: left;
-  }
-  
+  } 
+`
+
+export const SkillList = styled.ul`
+  list-style-type: none;
+  padding: 0;
 `

@@ -1,7 +1,7 @@
 import React from 'react';
 import Logo from '../Logo';
 import Navbar from '../Navbar';
-import UserHeader from '../UserHeader';
+// import UserHeader from '../UserHeader';
 import MobileNav from '../MobileNav';
 
 import { StyledContent, Header } from './styles';
@@ -20,7 +20,7 @@ const Layout = ({ user, children }) => {
       <StyledContent className='container'>
         
         <div>{children}</div>
-        <UserHeader user={user} />
+        {/* <UserHeader user={user} /> */}
       </StyledContent>
     </>
   );

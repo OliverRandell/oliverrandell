@@ -5,12 +5,12 @@ import { SectionTitle } from '../../styles';
 const timelineData = [
   {
     id: 1,
-    date: 'January 2023',
-    event: 'Event 1',
-    description: 'Description of Event 1',
+    date: 'February 2020',
+    event: 'Joined MyAdbox',
+    description: 'Joined MyAdbox as Product Lead for two teams across 5 different products',
     tag: {
       category: 'Career',
-      color: 'blue'
+      color: '#800080'
     },
     link: {
       url: '',
@@ -19,12 +19,12 @@ const timelineData = [
   },
   {
     id: 2,
-    date: 'February 2023',
-    event: 'Event 2',
-    description: 'Description of Event 2',
+    date: 'June 2017',
+    event: 'Travel South America',
+    description: '2 months backpacking around South America, Chile, Argentina, Bolivia & Peru',
     tag: {
-      category: 'Career',
-      color: 'green'
+      category: 'Personal Development',
+      color: '#55D6BE'
     },
     link: {
       url: '',
@@ -33,12 +33,12 @@ const timelineData = [
   },
   {
     id: 3,
-    date: 'March 2023',
-    event: 'Event 3',
-    description: 'Description of Event 3',
+    date: 'August 2006',
+    event: 'Motorsports Engineering Degree',
+    description: 'Studied Motorsport Engineering across 4 years at university, graducating from Oxford Brookes with a 2:1 B. Eng',
     tag: {
-      category: 'Career',
-      color: 'red',
+      category: 'Education',
+      color: '#FC6471',
     },
     link: {
       url: '',
@@ -48,15 +48,16 @@ const timelineData = [
   // Add more events as needed
 ];
 
-const TimelineItem = ({ date, event, description, color, category }) => (
+const TimelineItem = ({ date, event, description, color, category, url, text }) => (
   <section className="timeline-item">
     <div className="timeline-content">
       <span className='tag' style={{ background: color }}>
         {category}
       </span>
-      <div className="timeline-date">{date}</div>
-      <div className="timeline-event">{event}</div>
-      <div className="timeline-description">{description}</div>
+      <time className="timeline-date">{date}</time>
+      <h3 className="timeline-event">{event}</h3>
+      <p className="timeline-description">{description}</p>
+      <a href={{url}}>{text}</a>
       <span className="circle" />
     </div>
   </section>
@@ -76,6 +77,8 @@ const Timeline = () => (
           tag={item.tag}
           color={item.tag.color}
           category={item.tag.category}
+          url={item.link.url}
+          text={item.link.text}
         />
       
     ))}

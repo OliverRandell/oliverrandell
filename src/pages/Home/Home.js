@@ -24,13 +24,13 @@ const Me = ({ user }) => {
         <div>
           <SectionHeader>
             <SectionTitle>Timeline</SectionTitle>
-            <p>Browse timeline of key career and lifetime events.</p>
+            <p>Timeline of key career and lifetime events.</p>
           </SectionHeader>
         
           <Timeline />
         </div>
       </div>
-      <div>
+      {/* <div>
         <SectionTitle>Profiles</SectionTitle>
         <ul>
           {user.basics.profiles.map((profile, i) => (
@@ -42,7 +42,7 @@ const Me = ({ user }) => {
             </ProfileLink>
           ))}
         </ul>
-      </div>
+      </div> */}
     </Layout>
   );
 };

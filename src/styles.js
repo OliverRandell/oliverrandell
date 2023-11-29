@@ -10,7 +10,7 @@ export const SectionTitle = styled.h2`
   font-family: Amiri,serif;
   font-weight: 500;
   font-style: normal;
-  margin: 0 auto;
+  // margin: 0 auto;
   // font-size: 2.625rem;
   // line-height: 1.1904761905;
   // letter-spacing: -1px;

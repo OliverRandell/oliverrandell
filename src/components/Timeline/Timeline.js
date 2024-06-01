@@ -5,11 +5,11 @@ import { SectionTitle } from '../../styles';
 const timelineData = [
   {
     id: 1,
-    date: 'February 2020',
-    event: 'Joined MyAdbox',
-    description: 'Joined MyAdbox as Product Lead for two teams across 5 different products',
+    date: 'August 2023',
+    event: 'Onboarding Strategy',
+    description: 'Together as a team, developed onboarding strategy and plan to roll out using Guided Interaction',
     tag: {
-      category: 'Career',
+      category: 'UX Strategy',
       color: '#800080'
     },
     link: {

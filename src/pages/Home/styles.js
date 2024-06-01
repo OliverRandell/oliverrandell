@@ -23,8 +23,9 @@ export const HomeHeroWrapper = styled.section`
     //width: 560px;
     padding-right: 2rem;
   }
-  .job-title {
+  .position {
     display: block;
+    font-weight: bold;
   }
   .media {
     margin: 0;
@@ -43,6 +44,7 @@ export const HomeHeroWrapper = styled.section`
     img {
       background: #fff;
       padding: 1rem;
+      border-radius: 50%;
     }
   }
   h2 {

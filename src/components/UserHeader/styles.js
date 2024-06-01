@@ -1,8 +1,12 @@
 import styled from 'styled-components';
 
 export const HeaderContainer = styled.div`
-  display: flex;
-  justify-content: space-between;  
+  display: block;
+  border: 1px solid red;
+  background-color: #ccc;
+  left: 0;
+  top: 50vh;
+  position: absolute;
   @media (max-width: 640px) {
     display: ${({ isHome }) => (!isHome ? 'none' : 'flex')};
     flex-direction: column;

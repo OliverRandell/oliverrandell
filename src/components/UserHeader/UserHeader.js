@@ -11,15 +11,14 @@ const UserHeader = ({ user }) => {
       <Header>
         
         <div>
-          <ViewResumeLink
+          {/* <ViewResumeLink
             href={`https://gitconnected.com/${user.basics.username}/resume`}
             target="_blank"
             rel="noopener noreferrer"
             className='btn'
           >
             View Résumé
-            {/* <ArrowRight16 /> */}
-          </ViewResumeLink>
+          </ViewResumeLink> */}
           {/* <h1>Name: {user.basics.name}</h1> */}
           {/* <h4>Gitconnected User name:
             <a

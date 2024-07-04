@@ -5,9 +5,9 @@ import { SectionTitle } from '../../styles';
 const timelineData = [
   {
     id: 1,
-    date: 'August 2023',
-    event: 'Onboarding Strategy',
-    description: 'Together as a team, developed onboarding strategy and plan to roll out using Guided Interaction',
+    date: 'Feb 2023',
+    event: 'Automation & Efficiency',
+    description: 'Collaborated with the Customer Success team to automate response workflows using AI, significantly reducing time, cost and improving response times for common customer inquiries.',
     tag: {
       category: 'UX Strategy',
       color: '#800080'
@@ -19,11 +19,11 @@ const timelineData = [
   },
   {
     id: 2,
-    date: 'June 2017',
-    event: 'Travel South America',
-    description: '2 months backpacking around South America, Chile, Argentina, Bolivia & Peru',
+    date: 'Aug 2023',
+    event: 'Product Onboarding & User Engagement',
+    description: 'Engineered and implemented a scalable onboarding process using Intercom, which increased user engagement by 25% across all account clients. This initiative directly contributed to higher customer satisfaction and decreased churn rate.',
     tag: {
-      category: 'Personal Development',
+      category: 'Product Design',
       color: '#55D6BE'
     },
     link: {
@@ -33,11 +33,11 @@ const timelineData = [
   },
   {
     id: 3,
-    date: 'August 2006',
-    event: 'Motorsports Engineering Degree',
-    description: 'Studied Motorsport Engineering across 4 years at university, graducating from Oxford Brookes with a 2:1 B. Eng',
+    date: 'May 2022',
+    event: 'Sales & Marketing',
+    description: 'Conducted global product presentations that effectively communicated unique features tailored to brand needs, securing over 10 new clients on annual licenses, significantly boosting company revenue.',
     tag: {
-      category: 'Education',
+      category: 'Presentation',
       color: '#FC6471',
     },
     link: {
@@ -45,6 +45,20 @@ const timelineData = [
       text: 'Read more'
     },
   },
+  {
+    id: 4,
+    date: 'Sept 2021',
+    event: 'Product Rebuild & Launch',
+    description: 'Spearheaded a cross-functional team of 12 engineers and designers to overhaul and maintain a global marketing content creation platform, serving thousands of users. Enhanced team communication and stakeholder engagement to define product direction and priorities.',
+    tag: {
+      category: 'Leadership',
+      color: '#FC6471',
+    },
+    link: {
+      url: '',
+      text: 'Read more'
+    },
+  }
   // Add more events as needed
 ];
 

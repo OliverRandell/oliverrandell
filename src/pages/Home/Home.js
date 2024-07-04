@@ -12,8 +12,7 @@ const Me = ({ user }) => {
           <div className='content'>
             <h1>{user.basics.name}</h1>
             <SectionTitle><span className='position'>Product Manager</span> based in Melbourne</SectionTitle>
-            <p>Currently, I’m a Product Lead for Sesimi and startup founder. Fifteen years experience in web based environment including a background in Frontend Development and UX Design.</p>
-            <p>A problem solver at my core, my passion lies in building impactful products that make a positive dent in the world.</p>
+            <p>A natural problem solver, I am passionate about creating impactful products that make a positive difference in the world.</p>
           </div>
           <figure className="media">
             <Image src={user.basics.picture} />
@@ -29,11 +28,10 @@ const Me = ({ user }) => {
             </SectionHeader>
           </aside>
           <div className='main-content'>
-            <p>With 7 years of experience as a Senior Product Manager, I am currently managing product solutions for a brand management software company. My unique combination of frontend engineering and UX design expertise enables me to effectively handle both stakeholder management and technical discussions.</p>
-            <p>I graduated from university with a 2:1 in Motorsports Engineering and started as a race-car engineer. However, my interest in technology and design led me to transition into web design and development.</p>
-            <p>I taught myself Photoshop and HTML & CSS using resources like Sitepoint. The joy I experience in designing and creating is unparalleled and has greatly influenced my career path.</p>
-            <p>Over time, I've grown into a managerial role. I bring my technical, managerial, and creative skills to my current position, acting as a unifying force within the product team and ensuring high-quality output.</p>
-            <p>As I pursue further professional growth, I am seeking new challenges in a progressive organization. I am enthusiastic about applying my skills and experience in novel ways and contributing to an environment that values innovation and collaboration.</p>
+            <p>Hello! I’m a seasoned Product Lead at Sesimi and a startup founder with fifteen years of experience in web-based environments, specializing in Frontend Development and UX Design. With seven years as a Senior Product Manager, I currently manage product solutions for a leading brand management software company.</p>
+            <p>My journey began with a 2:1 degree in Motorsports Engineering, starting my career as a race-car engineer. However, my passion for technology and design led me to self-learn Photoshop and HTML & CSS, pivoting into web design and development. This blend of engineering precision and creative flair has been the cornerstone of my career.</p>
+            <p>My dual expertise in frontend engineering and UX design empowers me to bridge the gap between stakeholder expectations and technical realities, ensuring seamless project execution. I thrive on problem-solving and innovation, consistently delivering high-quality products that make a positive impact.</p>
+            <p>In my current role, I leverage my technical, managerial, and creative skills to unite and lead the product team, driving success through collaboration and excellence. As I look to the future, I am eager to embrace new challenges in a forward-thinking organisation that values innovation and teamwork. Let’s create something extraordinary together!</p>
           </div>
         </div>
       </div>
